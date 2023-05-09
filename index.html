@@ -32,13 +32,27 @@
                 <th>Annual Salary</th>
                 <th></th>
             </tr>
+            <tr>
+                <td>Jen</td>
+                <td>Barber</td>
+                <td>4521</td>
+                <td>Team Lead</td>
+                <td>$100,000</td>
+                <td><button onClick = 'deleteRow(event)' class="Employees">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Maurice</td>
+                <td>Moss</td>
+                <td>8724</td>
+                <td>Help Desk</td>
+                <td>$80,000</td>
+                <td><button onClick = 'deleteRow(event)' class="Employees">Delete</button></td>
+            </tr>
         </thead>
         <tbody id="employeeData">
         </tbody>
     </table>
-    </div>
-        <div>
-            <h3>Total Monthly: <span id="total-monthly-cost"></span></h3> 
+            <h3>Total Monthly: <span id="totalMonthlyCost"></span></h3> 
         </div>
     <script src="calculator.js"></script>
 </body>

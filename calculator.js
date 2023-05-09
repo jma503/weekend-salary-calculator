@@ -25,11 +25,19 @@
 
     });
 
-     
+
+// function totalMonthlyCosts (totalAnnualSalary) {
+//     let months = 12;
+//     return totalAnnualSalary / months;
+//     document.querySelector('#totalMonthlyCost').innerHTML = `Total Costs: ${totalMonthlyCosts}`;
+// }   
+
+//Need to calculate monthly costs and append to DOM
+   
+
 function deleteRow(event) {
     console.log(event.target.parentElement);
     event.target.parentElement.parentElement.remove();
 }
 
-
-
+// document.querySelector("#totalMonthlyCost").innerHTML = `Total Costs: ${totalMonthlyCosts}`;
