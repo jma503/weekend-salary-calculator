@@ -5,14 +5,27 @@
     padding: 20px 50px;
 }
 
-.submitButton {
-    background-color: coral;
-}
 
 div {
     width: 752px;
 }
 
 .p {
+    background-color: coral;
+}
+
+.newEmployee {
     text-align: right;
+}
+
+#Employees td,
+#Employees th {
+    border: 1px solid;
+    padding: 8px;
+}
+#Employees th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: lightgrey;
 }

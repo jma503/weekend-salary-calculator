@@ -11,13 +11,35 @@
 <body>
     <h3>Add Employee</h3>
     <div>
-    <input type="text" name="firstName" placeholder="First Name" required>
-    <input type="text" name="lastName" placeholder="Last Name" required>
-    <input type="text" name="ID" placeholder="ID" required>
-    <input type="text" name="title" placeholder="Title" required>
-    <input type="text" name="annualSalary" placeholder="Annual Salary" required>
-    <p class="p"><button class="submitButton" onclick="addEmployee(event)" class="newEmployee">Submit</button></p>
-    </div>
+    <form id="infoInput" class="newEmployee">
+    <input type="text" id="firstName" placeholder="First Name" required>
+    <input type="text" id="lastName" placeholder="Last Name" required>
+    <input type="number" id="ID" placeholder="ID" required>
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="number" id="annualSalary" placeholder="Annual Salary" required>
+    <p><button type="submit" class="p">Submit</button></p>
+    </form>
 
+    <p><h3>Employees</h3></p>
+    
+    <table id="Employees">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Annual Salary</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="employeeData">
+        </tbody>
+    </table>
+    </div>
+        <div>
+            <h3>Total Monthly: <span id="total-monthly-cost"></span></h3> 
+        </div>
+    <script src="calculator.js"></script>
 </body>
 </html>
