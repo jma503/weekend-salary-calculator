@@ -31,11 +31,17 @@ function calculateTotalAnnualSalaries (){
     return total + parseFloat(salary);
   }, 0);
     document.getElementById("totalMonthlyCost").innerHTML = "$" + (totalAnnualSalaries /12).toFixed(2);
+   
+  // If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
+  let totalMonthlyCost = totalAnnualSalaries /12;
+  if (totalMonthlyCost > 20000){
+    document.getElementById("totalMonthlyCost").style.backgroundColor = "red";
+  } else {
+    document.getElementById("totalMonthlyCost").style.backgroundColor = "";
   }
-  
-  
+}
 //delete function to delete row in the table
 function deleteRow(event) {
-    console.log(event.target.parentElement);
     event.target.parentElement.parentElement.remove();
+    calculateTotalAnnualSalaries();
 }
