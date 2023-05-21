@@ -5,6 +5,9 @@
     padding: 20px 50px;
 }
 
+.body {
+    background-color: rgb(232, 235, 235);
+}
 
 div {
     width: 785px;
@@ -22,6 +25,7 @@ div {
 #Employees th {
     border: 1px solid;
     padding: 8px;
+    background-color: aqua;
 }
 #Employees th {
     padding-top: 12px;
